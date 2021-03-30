@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ConstraintLayout">
-        <activity android:name=".register"></activity>
+        <activity android:name=".ActivityLihatData"
+            android:parentActivityName=".Home_Activity"></activity>
+        <activity android:name=".Home_Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".register" />
         <activity
             android:name=".ActivityHasil"
             android:label="@string/label2"
@@ -22,7 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
